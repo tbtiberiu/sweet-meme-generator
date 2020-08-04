@@ -62,13 +62,17 @@ const MemeGenerator = () => {
       <div className={styles.MemeGeneratorForm}>
         <button onClick={handleResetClickButton}>Reset</button>
         <form>
+          <label htmlFor="topTextInput">Top text:</label>
           <input
+            id="topTextInput"
             type="text"
             value={memeContext.topText}
             placeholder="Top text"
             onChange={handleTopTextInput}
           />
+          <label htmlFor="bottomTextInput">Bottom text:</label>
           <input
+            id="bottomTextInput"
             type="text"
             value={memeContext.bottomText}
             placeholder="Bottom text"

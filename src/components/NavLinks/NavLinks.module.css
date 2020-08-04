@@ -28,10 +28,10 @@
 }
 
 .CreateAMemeButton {
-  color: #ffffff !important;
   padding: 9px 20px;
-  background-color: #fb6202;
-  border-radius: 5px;
+  border: 2px solid #fb6202;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
 .activeLink {

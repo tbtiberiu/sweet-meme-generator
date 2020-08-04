@@ -32,6 +32,11 @@
   flex-direction: column;
 }
 
+.MemeGeneratorForm form label {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 .MemeGeneratorForm form input {
   border-radius: 3px;
 }
@@ -40,13 +45,14 @@
   margin-bottom: 22px;
   padding: 7px 10px;
   font-size: 1rem;
-  border: 1px solid #575757;
+  border: 1px solid #212121;
 }
 
 .MemeGeneratorForm form input[type="button"] {
   border: none;
-  background: #fb6202;
-  color: #ffffff;
+  background: #212121;
+  color: #fb6202;
+  font-weight: bold;
   padding: 12px 16px;
   font-size: 1.1rem;
 }

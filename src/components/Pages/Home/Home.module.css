@@ -2,7 +2,7 @@
   padding: 0 15%;
   display: flex;
   justify-content: space-between;
-  height: 70vh;
+  height: 72vh;
 }
 
 .HomeHero > div {
@@ -33,10 +33,11 @@
 }
 
 .ContentDiv a {
-  padding: 10px 30px;
+  padding: 13px 50px;
   border-radius: 5px;
   text-decoration: none;
-  color: #ffffff;
-  background: #fb6202;
   font-size: 1.2em;
+  background: #fb6202;
+  color: #ffffff;
+  font-weight: bold;
 }
