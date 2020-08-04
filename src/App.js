@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+import Layout from "./components/Layout/Layout";
+import Home from "./components/Pages/Home/Home";
+import Memes from "./components/Pages/Memes/Memes";
+import About from "./components/Pages/About/About";
+import MemeGeneratorPage from "./components/Pages/MemeGeneratorPage/MemeGeneratorPage";
+
+import { MemeTemplatesProvider } from "./contexts/MemeTemplatesContext";
+import { MemeGeneratorProvider } from "./contexts/MemeGeneratorContext";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MemeGeneratorProvider>
+      <Router>
+        <div className="App">
+          <Layout>
+            <Switch>
+              <Route path="/create-a-meme">
+                <MemeTemplatesProvider>
+                  <MemeGeneratorPage />
+                </MemeTemplatesProvider>
+              </Route>
+              <Route path="/templates">
+                <MemeTemplatesProvider>
+                  <Memes />
+                </MemeTemplatesProvider>
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Layout>
+        </div>
+      </Router>
+    </MemeGeneratorProvider>
   );
-}
+};
 
 export default App;

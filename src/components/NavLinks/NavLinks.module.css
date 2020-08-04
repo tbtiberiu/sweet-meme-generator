@@ -1,0 +1,40 @@
+.NavLinks {
+  display: flex;
+}
+
+.NavLinks ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.NavLinks ul li:first-child {
+  margin-left: 0;
+}
+
+.NavLinks ul li {
+  margin-left: 40px;
+}
+
+.NavLinks ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.NavLinks.dark ul li a {
+  color: #ffffff !important;
+  font-weight: 400 !important;
+}
+
+.CreateAMemeButton {
+  color: #ffffff !important;
+  padding: 9px 20px;
+  background-color: #fb6202;
+  border-radius: 5px;
+}
+
+.activeLink {
+  color: #fb6202 !important;
+  font-weight: 700;
+}

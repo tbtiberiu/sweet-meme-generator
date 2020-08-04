@@ -1,0 +1,23 @@
+.About {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 0 15%;
+  height: 65vh;
+}
+
+.AboutContent {
+  width: 40%;
+}
+
+.AboutContent h1 {
+  font-size: 2rem;
+}
+
+.AboutContent p {
+  font-size: 1.1rem;
+}
+
+.About img {
+  border-radius: 5px;
+}

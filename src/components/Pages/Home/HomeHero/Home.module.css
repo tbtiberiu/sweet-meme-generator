@@ -1,0 +1,42 @@
+.HomeHero {
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+}
+
+.HomeHero > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ImageDiv img {
+  border-radius: 5px;
+}
+
+.ContentDiv {
+  align-items: flex-end;
+}
+
+.ContentDiv h1 {
+  color: #222222;
+  text-align: right;
+  font-size: 3.25rem;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.ContentDiv span {
+  font-family: "Salsa", cursive;
+  color: #dd0006;
+}
+
+.ContentDiv a {
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #fb6202;
+  font-size: 1.2em;
+}
