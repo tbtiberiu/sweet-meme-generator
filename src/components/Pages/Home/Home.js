@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import sweetMeme from "../../../assets/sweet-meme.jpg";
 import styles from "./Home.module.css";
@@ -15,7 +17,10 @@ const Home = () => {
           your memes <br />
           <span>fast</span> and <span>easy</span>.
         </h1>
-        <Link to="/create-a-meme">Create a meme</Link>
+        <Link to="/create-a-meme">
+          Create a meme{" "}
+          <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: "25px" }} />
+        </Link>
       </div>
     </div>
   );

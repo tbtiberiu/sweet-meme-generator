@@ -12,13 +12,13 @@
   height: 40px;
   font-size: 1em;
   padding-left: 1rem;
-  border: 1px solid #6f6f6f;
+  border: 1px solid #333333;
   width: 60%;
   margin-right: 0.5rem;
 }
 
 .SearchForm button {
-  background: #6f6f6f;
+  background: #333333;
   border: none;
   height: 40px;
   width: 10%;

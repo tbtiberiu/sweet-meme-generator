@@ -3,7 +3,7 @@
   justify-content: space-between;
   margin-top: 48px;
   padding: 0 15%;
-  height: 65vh;
+  height: 68vh;
 }
 
 .AboutContent {
@@ -12,10 +12,12 @@
 
 .AboutContent h1 {
   font-size: 2rem;
+  color: #111111;
 }
 
 .AboutContent p {
   font-size: 1.1rem;
+  color: #333333;
 }
 
 .About img {

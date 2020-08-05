@@ -24,7 +24,7 @@
   text-align: right;
   font-size: 3.25rem;
   margin-top: 0;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 .ContentDiv span {
@@ -33,11 +33,11 @@
 }
 
 .ContentDiv a {
-  padding: 13px 50px;
+  padding: 13px 80px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.2em;
-  background: #fb6202;
+  background: #dd0006;
   color: #ffffff;
   font-weight: bold;
 }

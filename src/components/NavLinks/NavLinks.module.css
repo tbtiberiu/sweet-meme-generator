@@ -22,6 +22,10 @@
   color: #333333;
 }
 
+.NavLinks ul li a:hover {
+  color: #fb6202;
+}
+
 .NavLinks.dark ul li a {
   color: #ffffff !important;
   font-weight: 400 !important;
@@ -34,7 +38,13 @@
   border-radius: 20px;
 }
 
-.activeLink {
-  color: #fb6202 !important;
+.CreateAMemeButton:hover {
+  background: #fb6202;
+  color: #333333 !important;
+  transition: 0.3s;
+}
+
+.NavLinks:not(.dark) .activeLink {
+  border-bottom: 2px solid #fb6202;
   font-weight: 700;
 }
