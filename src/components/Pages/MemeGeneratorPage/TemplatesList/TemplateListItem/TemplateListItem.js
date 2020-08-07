@@ -15,7 +15,12 @@ const TemplateListItem = (props) => {
       alt={props.meme.name}
       height={props.height}
       onClick={handleImageClick}
-      style={{ cursor: "pointer" }}
+      style={{
+        cursor: "pointer",
+        margin: "auto",
+        padding: "15px",
+        background: "transparent",
+      }}
     />
   );
 };

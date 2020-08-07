@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { withRouter } from "react-router-dom";
+import styles from "./MemeTemplateItem.module.css";
 
 import MemeGeneratorContext from "../../../../contexts/MemeGeneratorContext";
 
@@ -12,7 +13,7 @@ const MemeTemplateItem = (props) => {
   };
 
   return (
-    <div>
+    <div className={styles.MemeTemplateItem}>
       <h2 onClick={handleClick}>{props.meme.name}</h2>
       <img
         src={props.meme.url}

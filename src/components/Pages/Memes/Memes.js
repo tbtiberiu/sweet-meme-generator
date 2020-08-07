@@ -14,10 +14,12 @@ const Memes = () => {
       <div className={styles.MemesItems}>
         {memeTemplates.loading ? (
           <p>Loading...</p>
-        ) : (
-          memeTemplates.memes.map((meme, index) => (
-            <MemeTemplateItem meme={meme} height="200" key={index} />
+        ) : memeTemplates.filteredMemes.length ? (
+          memeTemplates.filteredMemes.map((meme, index) => (
+            <MemeTemplateItem meme={meme} height="180" key={index} />
           ))
+        ) : (
+          <p>Couldn't find memes named {memeTemplates.filterText}.</p>
         )}
       </div>
     </div>

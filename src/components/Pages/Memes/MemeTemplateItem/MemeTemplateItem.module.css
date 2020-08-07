@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+  .MemeTemplateItem h2 {
+    font-size: 0.9rem;
+  }
+
+  .MemeTemplateItem img {
+    height: 150px;
+  }
+}

@@ -13,30 +13,28 @@ import { MemeGeneratorProvider } from "./contexts/MemeGeneratorContext";
 const App = () => {
   return (
     <MemeGeneratorProvider>
-      <Router>
-        <div className="App">
-          <Layout>
-            <Switch>
-              <Route path="/create-a-meme">
-                <MemeTemplatesProvider>
+      <MemeTemplatesProvider>
+        <Router>
+          <div className="App">
+            <Layout>
+              <Switch>
+                <Route path="/create-a-meme">
                   <MemeGeneratorPage />
-                </MemeTemplatesProvider>
-              </Route>
-              <Route path="/templates">
-                <MemeTemplatesProvider>
+                </Route>
+                <Route path="/templates">
                   <Memes />
-                </MemeTemplatesProvider>
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </Layout>
-        </div>
-      </Router>
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
+            </Layout>
+          </div>
+        </Router>
+      </MemeTemplatesProvider>
     </MemeGeneratorProvider>
   );
 };
