@@ -1,8 +1,9 @@
 .HomeHero {
-  padding: 0 15%;
+  width: 70%;
+  margin: 100px auto;
   display: flex;
   justify-content: space-between;
-  height: 72vh;
+  flex-wrap: wrap;
 }
 
 .HomeHero > div {
@@ -23,7 +24,6 @@
   color: #222222;
   text-align: right;
   font-size: 3.25rem;
-  margin-top: 0;
   margin-bottom: 110px;
 }
 
@@ -33,11 +33,45 @@
 }
 
 .ContentDiv a {
-  padding: 13px 80px;
+  width: 300px;
+  padding: 15px 20px;
+  text-align: center;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.2em;
   background: #dd0006;
   color: #ffffff;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1400px) {
+  .HomeHero {
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .ImageDiv img {
+    height: 380px;
+    width: 380px;
+  }
+
+  .ContentDiv {
+    align-items: center;
+  }
+
+  .ContentDiv h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .HomeHero > div {
+    margin: auto;
+  }
+
+  .ContentDiv h1 {
+    text-align: center;
+  }
 }

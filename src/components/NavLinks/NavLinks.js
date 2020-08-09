@@ -25,6 +25,7 @@ const NavLinks = (props) => {
           <NavLink
             to="/create-a-meme"
             className={props.buttonBackground ? styles.CreateAMemeButton : null}
+            activeClassName={styles.activeCreateAMemeButton}
           >
             Create a meme {props.buttonBackground}
           </NavLink>

@@ -5,3 +5,10 @@
   padding: 0 5%;
   background-color: #333333;
 }
+
+@media only screen and (max-width: 850px) {
+  .Footer {
+    padding: 15px 10%;
+    justify-content: center;
+  }
+}

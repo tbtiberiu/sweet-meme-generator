@@ -40,11 +40,49 @@
 
 .CreateAMemeButton:hover {
   background: #fb6202;
-  color: #333333 !important;
   transition: 0.3s;
 }
 
 .NavLinks:not(.dark) .activeLink {
   border-bottom: 2px solid #fb6202;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 850px) {
+  .NavLinks:not(.dark) {
+    height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .NavLinks.dark {
+    width: 100%;
+  }
+
+  .NavLinks.dark ul {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .NavLinks ul li {
+    margin-left: unset;
+    padding: 5px 11px;
+  }
+
+  .CreateAMemeButton {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    font-weight: 400;
+  }
+
+  .CreateAMemeButton:hover {
+    background: unset;
+    color: #fb6202;
+    transition: unset;
+  }
+
+  .NavLinks:not(.dark) .activeCreateAMemeButton {
+    border-bottom: 2px solid #fb6202;
+    font-weight: 700;
+  }
 }

@@ -8,3 +8,13 @@
 .Logo.dark a {
   color: #ffffff;
 }
+
+@media only screen and (max-width: 850px) {
+  .Logo {
+    margin-top: 10px;
+  }
+
+  .Logo.dark {
+    display: none;
+  }
+}

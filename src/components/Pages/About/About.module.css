@@ -1,9 +1,9 @@
 .About {
   display: flex;
   justify-content: space-between;
+  width: 70%;
+  margin: auto;
   margin-top: 48px;
-  padding: 0 15%;
-  height: 68vh;
 }
 
 .AboutContent {
@@ -22,4 +22,27 @@
 
 .About img {
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .About {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .About {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .AboutContent h1 {
+    text-align: center;
+  }
+
+  .AboutContent {
+    width: 100%;
+    margin-bottom: 70px;
+  }
 }

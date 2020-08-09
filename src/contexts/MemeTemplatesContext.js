@@ -15,6 +15,7 @@ export const MemeTemplatesProvider = (props) => {
       setMemes(res.data.data.memes);
       setFilteredMemes(res.data.data.memes);
     });
+    console.log("changes");
   }, []);
 
   const filterMemes = () => {

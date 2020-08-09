@@ -13,3 +13,13 @@ input[type="button"] {
 img {
   background: #dddddd;
 }
+
+main {
+  padding-bottom: 80px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

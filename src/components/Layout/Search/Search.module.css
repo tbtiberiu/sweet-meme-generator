@@ -1,5 +1,5 @@
 .SearchForm {
-  margin-top: 80px;
+  margin-top: 90px;
   display: flex;
   background: #eeeeee;
   justify-content: center;
@@ -25,4 +25,20 @@
   cursor: pointer;
   border-radius: 5px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1400px) {
+  .SearchForm input {
+    width: 65%;
+  }
+
+  .SearchForm button {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .SearchForm {
+    margin-top: 120px;
+  }
 }

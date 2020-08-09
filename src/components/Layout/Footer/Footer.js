@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.Footer}>
       <NavLinks dark />
-      <Logo dark />
+      <Logo dark className={styles.Logo} />
     </footer>
   );
 };
