@@ -1,7 +1,7 @@
 {
   "name": "sweet-meme-generator",
   "description": "Create your own memes.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
