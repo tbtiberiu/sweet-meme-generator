@@ -10,7 +10,7 @@ const About = () => {
         <p>
           We try to make creating memes a lot easier for you with our meme
           generator. We will also improve our app in the future to make it even
-          more enjoiable.
+          more enjoyable.
         </p>
       </section>
       <section>

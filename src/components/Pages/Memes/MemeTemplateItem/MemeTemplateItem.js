@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter } from "react-router";
 import styles from "./MemeTemplateItem.module.css";
 
 import MemeGeneratorContext from "../../../../contexts/MemeGeneratorContext";
