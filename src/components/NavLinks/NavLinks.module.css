@@ -27,8 +27,8 @@
 }
 
 .NavLinks.dark ul li a {
-  color: #ffffff !important;
-  font-weight: 400 !important;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .CreateAMemeButton {
@@ -40,6 +40,7 @@
 
 .CreateAMemeButton:hover {
   background: #fb6202;
+  color: #ffffff !important;
   transition: 0.3s;
 }
 
@@ -77,7 +78,6 @@
 
   .CreateAMemeButton:hover {
     background: unset;
-    color: #fb6202;
     transition: unset;
   }
 
